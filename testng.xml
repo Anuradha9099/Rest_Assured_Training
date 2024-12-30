@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="api.utilities.ExternalReportManager"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="D:/RestAssured-Traning/RestAssured-Framework/src/test/java/api/test">
+        <classes>
+<!--            <class name="api.test.DataDrivenTest">-->
+<!--                <methods>-->
+<!--                    <include name="testPostUser"/>-->
+<!--                    <include name="testDeleteUser"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="api.test.UserTest">
+                <methods>
+                    <include name="testPOSTUser"/>
+                    <include name="testGETUser"/>
+                    <include name="testPUTUser"/>
+                    <include name="testDELETEUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
